@@ -9,4 +9,7 @@ export const STRING_GLOBAL = {
     PAYMENT: "پرداخت",
     SETTINGS: "تنظیمات",
     BACK: "بازگشت",
+    MY_TICKET: "بلیت های من",
+    SEARCH: "جستجو",
+    NOT_FOUND: "موردی یافت نشد",
 };

@@ -4,9 +4,11 @@ import Header from "./header";
 
 const RootLayout: FC = () => {
     return (
-        <div>
+        <div className="">
             <Header />
-            <Outlet />
+            <div className="t-px-4">
+                <Outlet />
+            </div>
         </div>
     );
 };

@@ -3,7 +3,7 @@ import { STRING_GLOBAL } from "@/constants/string.constants";
 import {
     useGetBanksQuery,
     useLazyGetPaymentQuery,
-} from "@/controllers/bank.controller";
+} from "@/controllers/category.controller";
 
 import { FC, useEffect, useState } from "react";
 import BankCard from "../../bank-card";

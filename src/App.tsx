@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 
 // components
 import router from "@/router";
-import store from "@/app/store";
+
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import InitWidget from "./widget/init-widget";
@@ -16,6 +16,7 @@ import "swiper/css/effect-fade";
 
 // types
 import { WidgetProps } from "./types/widget-types/widget.types";
+import store from "./app/store";
 
 const Widget = (props: WidgetProps) => {
     return (

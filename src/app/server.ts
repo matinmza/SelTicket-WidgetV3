@@ -84,7 +84,7 @@ const api = createApi({
         unknown,
         CustomErrorT
     >,
-    tagTypes: ["User"],
+    tagTypes: ["User", "show"],
     endpoints: () => ({}),
 });
 
