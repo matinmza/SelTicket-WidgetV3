@@ -1,7 +1,7 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
 import { FC } from "react";
-import { STRING_DASHBOARD } from "../../sections/dashboard/string.constants";
+
 import { STRING_GLOBAL } from "@/constants/string.constants";
 
 const NoConfigAlert: FC = () => {
@@ -10,9 +10,7 @@ const NoConfigAlert: FC = () => {
             <Alert variant="destructive">
                 <AlertCircle className="t-h-4 t-w-4" />
                 <AlertTitle>{STRING_GLOBAL.ERROR}</AlertTitle>
-                <AlertDescription>
-                    {STRING_DASHBOARD.NO_CONFIG_MESSAGE}
-                </AlertDescription>
+                <AlertDescription>{STRING_GLOBAL.NO_CONFIG}</AlertDescription>
             </Alert>
         </div>
     );

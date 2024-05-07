@@ -12,4 +12,5 @@ export const STRING_GLOBAL = {
     MY_TICKET: "بلیت های من",
     SEARCH: "جستجو",
     NOT_FOUND: "موردی یافت نشد",
+    NO_CONFIG: "ورودی های این ویجت صحیح نمی باشد",
 };

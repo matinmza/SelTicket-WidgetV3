@@ -14,4 +14,4 @@ const WidgetConverted = r2wc(Widget, {
     },
 });
 
-customElements.define("ai-assistant", WidgetConverted);
+customElements.define("sel-ticket", WidgetConverted);

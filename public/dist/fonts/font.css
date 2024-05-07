@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Vazir;
+    src: url("/fonts/vazir/Vazir-FD-WOL.woff2") format("woff2"),
+        url("/fonts/vazir/Vazir-FD-WOL.woff") format("woff");
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("/fonts/vazir/Vazir-Thin-FD-WOL.woff2") format("woff2"),
+        url("/fonts/vazir/Vazir-Thin-FD-WOL.woff") format("woff");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("/fonts/vazir/Vazir-Light-FD-WOL.woff2") format("woff2"),
+        url("/fonts/vazir/Vazir-Light-FD-WOL.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("/fonts/vazir/Vazir-FD-WOL.woff2") format("woff2"),
+        url("/fonts/vazir/Vazir-FD-WOL.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("/fonts/vazir/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+        url("/fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("/fonts/vazir/Vazir-Bold-FD-WOL.woff2") format("woff2"),
+        url("/fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff");
+    font-weight: 700;
+}
+
+body {
+    font-family: Vazir;
+}

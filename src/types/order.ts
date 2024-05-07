@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------
 
-import { Order } from 'src/sections/book/enums';
+// import { Order } from "@/sections/book/enums";
 
-import { EnumToPrimitiveUnion } from './general';
+// import { EnumToPrimitiveUnion } from "./general";
 
 export type IOrder = {
     orderId: number;
@@ -13,7 +13,7 @@ export type IOrder = {
     showImageUrl: string;
     ticketCount: number;
     startAt: Date;
-    status: EnumToPrimitiveUnion<Order>;
+    // status: EnumToPrimitiveUnion<Order>;
     transactionId: string;
     placeAddress: string;
 };

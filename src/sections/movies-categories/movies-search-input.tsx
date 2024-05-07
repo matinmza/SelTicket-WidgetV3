@@ -38,7 +38,7 @@ const MoviesSearchInput = () => {
                     variant="outline"
                     role="combobox"
                     aria-expanded={open}
-                    className="t-w-full t-justify-between"
+                    className="t-w-full t-justify-between t-bg-muted"
                 >
                     {STRING_GLOBAL.SEARCH}
                     <Search className="t-mr-2 t-h-4 t-w-4 t-shrink-0 t-opacity-50" />

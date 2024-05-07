@@ -1,6 +1,6 @@
-import MoviesCategory from "../movies-category";
+// import MoviesCategory from "../movies-category";
 import MoviesSearchInput from "../movies-search-input";
-import MoviesSkeletonLoading from "../movies-skeleton-loading";
+// import MoviesSkeletonLoading from "../movies-skeleton-loading";
 
 const MoviesCategoriesSection = () => {
     return (
