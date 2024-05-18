@@ -1,12 +1,10 @@
 import { widgetReducer } from "@/features/widget/widget.slice";
+import { movieReducer } from "@/features/movie/movie.slice";
 
 import { layoutReducer } from "@/features/layout/layout.slice";
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
 
-import { stepsReducer } from "@/features/steps/steps.slice";
-import { chatReducer } from "@/features/chat/chat.slice";
-import { signalReducer } from "@/features/signal/signal.slice";
 import api from "./server";
 
 const store = configureStore({
@@ -14,9 +12,7 @@ const store = configureStore({
     reducer: {
         layout: layoutReducer,
         widget: widgetReducer,
-        steps: stepsReducer,
-        chat: chatReducer,
-        signal: signalReducer,
+        movie: movieReducer,
 
         [api.reducerPath]: api.reducer,
     },

@@ -13,4 +13,6 @@ export const IMG_CONSTANTS = {
     CONTACT_ROBOT: baseUrl + "/images/contact-robot.svg",
     DASHBOARD_GOAL_IMAGE: baseUrl + "/images/goal-dashboard-image.svg",
     DASHBOARD_NEW_PAN: baseUrl + "/images/new-plan.svg",
+
+    BG_MOVIE: baseUrl + "/images/bg-movie.jpg",
 };

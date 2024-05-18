@@ -26,10 +26,7 @@ const DrawerOverlay = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <DrawerPrimitive.Overlay
         ref={ref}
-        className={cn(
-            "t-fixed t-inset-0 t-z-50 t-bg-[#000000] t-bg-opacity-50",
-            className
-        )}
+        className={cn("t-fixed t-inset-0 t-z-50 t-bg-black/80", className)}
         {...props}
     />
 ));
@@ -44,12 +41,12 @@ const DrawerContent = React.forwardRef<
         <DrawerPrimitive.Content
             ref={ref}
             className={cn(
-                "t-fixed t-inset-x-0 t-bottom-0 t-z-50 t-mt-24 t-flex t-h-auto t-flex-col t-rounded-t-[10px] t-border t-bg-background",
+                "t-fixed t-inset-x-0 t-bottom-0 t-z-50 t-mt-24 t-flex t-h-auto t-flex-col t-rounded-t-[10px] t-border-t t-border-slate-200 t-bg-background  ",
                 className
             )}
             {...props}
         >
-            <div className="t-mx-auto t-mt-4 t-h-2 t-w-[100px] t-rounded-full t-bg-muted" />
+            <div className="t-mx-auto t-mt-4 t-h-2 t-w-[100px] t-rounded-full t-bg-slate-100 dark:t-bg-slate-800" />
             {children}
         </DrawerPrimitive.Content>
     </DrawerPortal>
@@ -102,7 +99,10 @@ const DrawerDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
     <DrawerPrimitive.Description
         ref={ref}
-        className={cn("t-text-sm t-text-muted-foreground", className)}
+        className={cn(
+            "t-text-sm t-text-slate-500 dark:t-text-slate-400",
+            className
+        )}
         {...props}
     />
 ));

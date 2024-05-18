@@ -1,12 +1,20 @@
+import { movieActions } from "@/features/movie/movie.slice";
+import useAppDispatch from "@/hooks/store/useAppDispatch";
 import { IMovie } from "@/types/cinema";
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const MoviesCardSmall: FC<IMovie> = (props) => {
+    const dispatch = useAppDispatch();
+    const navigate = useNavigate();
+    const handleMovie = () => {
+        dispatch(movieActions.setActiveMovie({ ...props }));
+        navigate("/movie");
+    };
     return (
-        <Link
-            to={`/movie/${props.id}`}
-            className="t-flex t-gap-2 hover:t-bg-muted t-p-3 t-transition t-rounded-md"
+        <div
+            onClick={handleMovie}
+            className="t-flex t-cursor-pointer t-gap-2 hover:t-bg-muted t-p-3 t-transition t-rounded-md"
         >
             <img
                 className="t-w-12 t-h-12 t-flex-shrink-0 t-rounded-full"
@@ -20,7 +28,7 @@ const MoviesCardSmall: FC<IMovie> = (props) => {
                     {props.about_show}
                 </p>
             </div>
-        </Link>
+        </div>
     );
 };
 

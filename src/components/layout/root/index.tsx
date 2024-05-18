@@ -6,7 +6,7 @@ const RootLayout: FC = () => {
     return (
         <div className="">
             <Header />
-            <div className="t-px-4">
+            <div>
                 <Outlet />
             </div>
         </div>

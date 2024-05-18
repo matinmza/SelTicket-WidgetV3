@@ -13,4 +13,10 @@ export const STRING_GLOBAL = {
     SEARCH: "جستجو",
     NOT_FOUND: "موردی یافت نشد",
     NO_CONFIG: "ورودی های این ویجت صحیح نمی باشد",
+    SEE_ALL: "مشاهده همه",
+    DIRECTOR: "کارگردان",
+    ABOUT: "درباره",
+    SELECT_SANS_AND_CINEMA: "انتخاب سانس و سینما",
+    SELECT_PROVINCE: "انتخاب  استان ",
+    SELECT_CITY: "انتخاب  شهر ",
 };
