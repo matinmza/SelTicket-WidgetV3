@@ -2,12 +2,10 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { MovieStateI } from "./movie.types";
 
 import { IMovie } from "@/types/cinema";
-import { DrawerListItem } from "@/types/objects";
 
 export const initialMovieState: MovieStateI = {
     activeMovie: undefined,
-    city: undefined,
-    province: undefined,
+    selectedDateSans: "",
 };
 
 export const movieSlice = createSlice({
@@ -17,15 +15,8 @@ export const movieSlice = createSlice({
         setActiveMovie: (state, action: PayloadAction<IMovie | undefined>) => {
             state.activeMovie = action.payload;
         },
-        setProvince: (
-            state,
-            action: PayloadAction<DrawerListItem | undefined>
-        ) => {
-            state.city = undefined;
-            state.province = action.payload;
-        },
-        setCity: (state, action: PayloadAction<DrawerListItem | undefined>) => {
-            state.city = action.payload;
+        setActiveDateSans: (state, action: PayloadAction<string>) => {
+            state.selectedDateSans = action.payload;
         },
     },
 });

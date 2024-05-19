@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent } from "@/components/ui/drawer";
 import { STRING_GLOBAL } from "@/constants/string.constants";
-import {
-    useLazyCitiesQuery,
-    useProvincesQuery,
-} from "@/controllers/general.controller";
+import { useLazyCitiesQuery } from "@/controllers/general.controller";
 
 import { useEffect, useMemo, useState } from "react";
 import SelectCard from "./select-card";
 import useAppDispatch from "@/hooks/store/useAppDispatch";
-import { movieActions } from "@/features/movie/movie.slice";
 import { toDrawerListItems } from "@/utils/list-convertor";
 import { DrawerListItem } from "@/types/objects";
 import useAppSelector from "@/hooks/store/useAppSelector";
-import { selectCity, selectProvince } from "@/features/movie/movie.selectors";
+import {
+    selectCity,
+    selectProvince,
+} from "@/features/province/province.selectors";
+import { provinceActions } from "@/features/province/province.slice";
 
 const SelectCity = () => {
     const [call, resCities] = useLazyCitiesQuery();
@@ -29,7 +29,7 @@ const SelectCity = () => {
     }, [resCities]);
 
     const handleSetValue = (value: DrawerListItem) => {
-        dispatch(movieActions.setCity(value));
+        dispatch(provinceActions.setCity(value));
         setOpen(false);
     };
     useEffect(() => {

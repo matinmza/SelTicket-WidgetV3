@@ -2,6 +2,7 @@ import React from "react";
 import { STRING_GLOBAL } from "@/constants/string.constants";
 import SelectProvince from "../city-and-province/select-province";
 import SelectCity from "../city-and-province/select-city";
+import MovieSelectDateSans from "../select-date-sans/movie-select-date-sans";
 
 const MovieSansSection = () => {
     return (
@@ -13,6 +14,7 @@ const MovieSansSection = () => {
                 <SelectProvince />
                 <SelectCity />
             </div>
+            <MovieSelectDateSans />
         </div>
     );
 };
