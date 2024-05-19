@@ -6,11 +6,12 @@ import { useProvincesQuery } from "@/controllers/general.controller";
 import { useMemo, useState } from "react";
 import SelectCard from "./select-card";
 import useAppDispatch from "@/hooks/store/useAppDispatch";
-import { movieActions } from "@/features/movie/movie.slice";
+
 import { toDrawerListItems } from "@/utils/list-convertor";
 import { DrawerListItem } from "@/types/objects";
 import useAppSelector from "@/hooks/store/useAppSelector";
-import { selectProvince } from "@/features/movie/movie.selectors";
+import { provinceActions } from "@/features/province/province.slice";
+import { selectProvince } from "@/features/province/province.selectors";
 
 const SelectProvince = () => {
     const { data, isError } = useProvincesQuery(null);
@@ -24,7 +25,7 @@ const SelectProvince = () => {
     }, [data]);
 
     const handleSetValue = (value: DrawerListItem) => {
-        dispatch(movieActions.setProvince(value));
+        dispatch(provinceActions.setProvince(value));
         setOpen(false);
     };
 

@@ -1,4 +1,11 @@
-export type LocalStorageValueT = "ON_BOARDING" | "TOKEN";
+import { DrawerListItem } from "@/types/objects";
+
+export type LocalStorageValueT = "TOKEN" | "PROVINCE";
+
+interface ProvinceStateI {
+    province?: DrawerListItem;
+    city?: DrawerListItem;
+}
 
 export const getLocalStorage = <T>(key: LocalStorageValueT): T | null => {
     try {
@@ -32,11 +39,25 @@ export const removeLocalStorage = (key: LocalStorageValueT): boolean => {
     }
 };
 
-export const handleSetOnBoarding = () => setLocalStorage("ON_BOARDING", true);
-export const isSeenOnBoarding = () => getLocalStorage<boolean>("ON_BOARDING");
-
 // token
 export const handleSetToken = (token: string) =>
     setLocalStorage("TOKEN", token);
 export const handleGetToken = () => getLocalStorage<string>("TOKEN");
 export const handleRemoveToken = () => removeLocalStorage("TOKEN");
+
+// province
+export const handleSetProvinceStore = (
+    key: "province" | "city",
+    value?: DrawerListItem
+) => {
+    const state = handleGetAll() || {};
+    console.log(value);
+    setLocalStorage("PROVINCE", { ...state, [key]: value });
+};
+export const handleGetAll = () => getLocalStorage<ProvinceStateI>("PROVINCE");
+
+export const handleGetProvinceStore = (key: "city" | "province") => {
+    const res = handleGetAll();
+    if (res) return res[key];
+    return undefined;
+};

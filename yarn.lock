@@ -696,6 +696,11 @@
   resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.5.tgz"
   integrity sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==
 
+"@types/jalaali-js@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.npmjs.org/@types/jalaali-js/-/jalaali-js-1.1.3.tgz"
+  integrity sha512-Kbf1xArjBGvbK3LNWO4ytwjU5x1C1N1xVqD35rkw5McC8TWYIVa4zUuY84/o7/tGT/d356/qJyDCExAzc8Xq7A==
+
 "@types/js-cookie@^2.2.6":
   version "2.2.7"
   resolved "https://registry.npmjs.org/@types/js-cookie/-/js-cookie-2.2.7.tgz"
@@ -1142,6 +1147,11 @@ date-fns-jalali@^3.3.1-0:
   version "3.3.1-0"
   resolved "https://registry.npmjs.org/date-fns-jalali/-/date-fns-jalali-3.3.1-0.tgz"
   integrity sha512-D4EnArluC5GVvWFJT1fM40iEM51OpkG5WJF+AlBxdSW/LUQKMV18OMVUtAB5tD8HnozIlJL770SxzGUJpnlIIQ==
+
+date-fns@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.npmjs.org/date-fns/-/date-fns-3.6.0.tgz"
+  integrity sha512-fRHTG8g/Gif+kSh50gaGEdToemgfj74aRX3swtiouboip5JDLAyDE9F11nHMIcvOaXeOC6D7SpNhi7uFyB7Uww==
 
 debug@^4.3.1, debug@^4.3.2, debug@^4.3.4:
   version "4.3.4"
@@ -1688,6 +1698,11 @@ jackspeak@^2.3.5:
     "@isaacs/cliui" "^8.0.2"
   optionalDependencies:
     "@pkgjs/parseargs" "^0.11.0"
+
+jalaali-js@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.npmjs.org/jalaali-js/-/jalaali-js-1.2.6.tgz"
+  integrity sha512-io974va+Qyu+UfuVX3UIAgJlxLhAMx9Y8VMfh+IG00Js7hXQo1qNQuwSiSa0xxco0SVgx5HWNkaiCcV+aZ8WPw==
 
 jiti@^1.19.1:
   version "1.21.0"
